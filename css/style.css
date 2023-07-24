@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "General Sans";
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+
+nav {
+  padding: 20px 101px;
+  display: flex;
+  gap: 88px;
+  position: fixed;
+  z-index: 9999;
+  background: #ffffff62;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  /* width: 60%; */
+  top: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.logo_name {
+  display: flex;
+  align-items: center;
+}
+
+.logo_name h1 a {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 28.235px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 474px;
+}
+
+.links ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.links li a {
+  color: #000;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.links .tryBtn button {
+  padding: 16px 24px;
+  border-radius: 70px;
+  border: none;
+  background: #3461ff;
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.leftBox {
+  width: 40%;
+}
+
+/* .rightBox figure {
+  display: flex;
+  width: 50%;
+}
+
+.rightBox .top {
+  display: flex;
+  width: 100%;
+}
+
+.rightBox img {
+  width: 100%;
+  height: 100%;
+} */
+
+header {
+  padding: 100px 100px;
+  display: flex;
+}
+
+.label h1 {
+  color: #000;
+  font-size: 86px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.paragraph p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 24px 0 52px;
+
+  width: 80%;
+}
+
+.talk input {
+  border-radius: 37px;
+  background: #fafafa;
+  padding: 20px 18px;
+  width: 60%;
+  border: none;
+}
+
+.talk {
+  display: flex;
+  gap: 12px;
+}
+
+.talk button {
+  padding: 20px 24px;
+  border-radius: 70px;
+  background: #3461ff;
+  border: none;
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.companies {
+  padding: 46px 100px;
+}
+
+.companies .title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 36px;
+}
+
+.companies .title h3 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+  width: 23%;
+}
+
+.companies .title p {
+  color: #252525;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  width: 32%;
+}
+
+.topCards,
+.bottomCards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 101px;
+}
+
+.commit {
+  display: flex;
+  padding: 103px 100px;
+  justify-content: space-between;
+}
+
+.commit .rightBox {
+  width: 50%;
+}
+
+.commit .leftBox .cards {
+  display: grid;
+  grid-template-columns: repeat(2, calc(60% / 2));
+  gap: 42px 148px;
+}
+
+.commit .leftBox .cards .card h2 {
+  color: #000;
+  font-size: 64px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.commit .leftBox .cards .card p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.commit .rightBox p {
+  margin: 12px 0 50px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.commit .rightBox h2 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.commit .rightBox a {
+  color: #3461ff;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+}
+
+.howWorks {
+  display: flex;
+  gap: 125px;
+  padding: 86px 100px;
+}
+
+.rightSide .cards {
+  display: grid;
+  grid-template-columns: repeat(2, calc(100% / 2));
+  gap: 80px 20px;
+}
+
+.rightSide .cards .card p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.rightSide .cards .card h3 {
+  margin: 24px 0 16px;
+  color: #000;
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.leftSide p {
+  /* width: 77%; */
+  margin: 12px 0 46px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.leftSide figure img {
+  width: 100%;
+}
+
+.ourWork {
+  text-align: center;
+  padding: 79px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ourWork h3 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.ourWork p {
+  margin: 12px 0 60px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+  width: 60%;
+}
+
+.workCards {
+  display: flex;
+  gap: 20px;
+}
+
+.workCards .card h4 {
+  color: #000;
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.workCards .card p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.workCards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more button {
+  padding: 16px 48px;
+  border-radius: 64px;
+  background: #3461ff;
+  border: none;
+
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.startJourney {
+  padding: 66px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, calc(100% / 2));
+  background: #3461ff;
+}
+
+.leftText h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: capitalize;
+  width: 60%;
+}
+
+.rightText p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 26px;
+}
+
+.rightText a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+}
