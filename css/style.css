@@ -422,6 +422,8 @@ header {
 
 .about {
   padding: 78px 100px;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .title_btn {
@@ -473,7 +475,7 @@ header {
   width: 100%;
   display: flex;
   gap: 20px;
-  overflow-x: hidden;
+
 }
 
 .about .cards .card {
@@ -512,9 +514,10 @@ header {
 }
 
 .cardgray {
+  position: absolute;
   background: #f8f9ff;
-  right: 0;
-  width: 500px;
+  left: 80%;
+  width: 35%;
   padding: 32px 72px 32px 32px;
   border-radius: 30px;
 }
@@ -586,12 +589,14 @@ header {
 
 .helpP {
   height: 0;
-  opacity: 0;
+  overflow: hidden;
+  transition: 0.3s ease-in;
 }
 
 .helpP.active {
-  height: 100%;
-  opacity: 1;
+  height: 100px;
+  /* min-height: 100px; */
+
 }
 
 .textBtn {
@@ -652,6 +657,6 @@ header {
   text-transform: capitalize;
 }
 
-.howHelp .talk{
+.howHelp .talk {
   margin-bottom: 42px;
 }

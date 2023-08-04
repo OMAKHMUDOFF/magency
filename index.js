@@ -2,7 +2,7 @@ let helpCards = document.querySelector(".rightHelp");
 let data = [
   {
     id: 1,
-    name: "How do i sign up for the project?",
+    label: "How do i sign up for the project?",
     button: false,
     text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
     Necessitatibus pariatur tempora, quisquam veritatis temporibus,
@@ -11,7 +11,7 @@ let data = [
   },
   {
     id: 2,
-    name: "What thing that i should prepare before starting?",
+    label: "What thing that i should prepare before starting?",
     button: false,
     text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
     Necessitatibus pariatur tempora, quisquam veritatis temporibus,
@@ -20,7 +20,7 @@ let data = [
   },
   {
     id: 3,
-    name: "Does my company need help for marketing advices?",
+    label: "Does my company need help for marketing advices?",
     button: false,
     text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
     Necessitatibus pariatur tempora, quisquam veritatis temporibus,
@@ -31,12 +31,11 @@ let data = [
 
 function innerHTMLfunc() {
   helpCards.innerHTML = "";
-
   data.map((elem) => {
     helpCards.innerHTML += `
         <div class="helpCard">
             <div class="textBtn">
-                <h1>${elem.name}</h1>
+                <h1>${elem.label}</h1>
                 <button class="btnPlus">+</button>
             </div>
             <p class="helpP">${elem.text}</p>
@@ -47,16 +46,15 @@ function innerHTMLfunc() {
 
 innerHTMLfunc();
 
-let btnPlus = document.querySelector(".btnPlus"),
-  text = document.querySelector(".helpP");
+// let plusBtn =(i)=>{
+//   data = data.map((elem)=>{
+//     elem.id === data[i].id ? {...elem, button: !elem.button} : elem
+//   })
+//   innerHTMLfunc()
+// }
 
-btnPlus.forEach((btn, index) => {
-  btn.addEventListener("click", (e) => {
-    innerRemove();
-    text[index].classList.add("active");
-    btnPlus[index].innerHTML = "-";
-  });
-});
+let btnPlus = document.querySelectorAll(".btnPlus"),
+  text = document.querySelectorAll(".helpP");
 function innerRemove() {
   btnPlus.forEach((btn) => {
     btn.innerHTML = "+";
@@ -65,3 +63,11 @@ function innerRemove() {
     p.classList.remove("active");
   });
 }
+
+btnPlus.forEach((btn, index) => {
+  btn.addEventListener("click", (e) => {
+    innerRemove();
+    text[index].classList.add("active");
+    btnPlus[index].innerHTML = "-";
+  });
+});
