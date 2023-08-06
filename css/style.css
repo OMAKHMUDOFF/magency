@@ -14,7 +14,7 @@ html {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  /* background-color: red; */
+  background-color: red;
 }
 
 nav {
@@ -26,7 +26,7 @@ nav {
   background: #ffffff62;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  /* width: 60%; */
+  /* width: 100%; */
   top: 0;
 }
 
@@ -52,13 +52,14 @@ button {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  gap: 474px;
+  gap: 440px;
 }
 
 .links ul {
   display: flex;
   align-items: center;
   gap: 40px;
+  /* width: 100%; */
 }
 
 .links li a {
@@ -84,24 +85,14 @@ button {
   width: 40%;
 }
 
-/* .rightBox figure {
-  display: flex;
-  width: 50%;
-}
-
-.rightBox .top {
-  display: flex;
-  width: 100%;
-}
-
-.rightBox img {
-  width: 100%;
-  height: 100%;
-} */
-
 header {
   padding: 100px 100px;
   display: flex;
+  gap: 134px;
+}
+
+header .rightBox img{
+  width: 130%;
 }
 
 .label h1 {
@@ -322,6 +313,10 @@ header {
   align-items: center;
 }
 
+.workCards .card img{
+  width: 100%;
+}
+
 .more button {
   padding: 16px 48px;
   border-radius: 64px;
@@ -475,7 +470,6 @@ header {
   width: 100%;
   display: flex;
   gap: 20px;
-
 }
 
 .about .cards .card {
@@ -580,11 +574,16 @@ header {
 .circle {
   border-radius: 352px;
   background: #e0ff22;
-  padding: 139px 0;
+  padding: 119px 0;
   width: calc(100% / 3);
   text-align: center;
 
   font-size: 50px;
+}
+
+.circle i{
+  color: #3461FF;
+  font-size: 100px;
 }
 
 .helpP {
@@ -596,7 +595,6 @@ header {
 .helpP.active {
   height: 100px;
   /* min-height: 100px; */
-
 }
 
 .textBtn {
@@ -659,4 +657,91 @@ header {
 
 .howHelp .talk {
   margin-bottom: 42px;
+}
+
+footer {
+  padding: 62px 100px;
+}
+
+.topFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 82px;
+}
+
+.address {
+  margin: 20px 0;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.socNetwork i {
+  color: #3461ff;
+  font-size: 25px;
+}
+
+.socNetwork {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 41px;
+}
+
+.contactus button {
+  padding: 16px 68px;
+  border-radius: 69px;
+  background: #3461ff;
+  border: none;
+
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.rightFooter {
+  display: flex;
+  gap: 75px;
+}
+
+.firstCol ul,
+.secondCol ul,
+.thirdCol ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer .links li a {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.bottomFooter {
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.otherLink{
+  display: flex;
+  gap: 215px;
+}
+
+.bottomFooter a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.hamburgerMenu{
+  display: none;
 }

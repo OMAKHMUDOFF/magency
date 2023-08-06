@@ -1,0 +1,363 @@
+@media (max-width: 1355px) {
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 300px;
+  }
+
+  .links ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .links .tryBtn button {
+    padding: 16px 24px;
+    border-radius: 70px;
+    border: none;
+    background: #3461ff;
+
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  .btn_learnMore button {
+    padding: 16px 48px;
+    border-radius: 69px;
+    background: #3461ff;
+    margin-top: 30px;
+    border: none;
+
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+}
+
+@media (max-width: 1275px) {
+  header .rightBox img {
+    width: 120%;
+  }
+
+  .label h1 {
+    color: #000;
+    font-size: 76px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .circle {
+    border-radius: 352px;
+    background: #e0ff22;
+    padding: 99px 0;
+    width: calc(100% / 3);
+    text-align: center;
+
+    font-size: 50px;
+  }
+
+  .circle i {
+    color: #3461ff;
+    font-size: 80px;
+  }
+
+  .box .title h1 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 139px;
+  }
+}
+
+@media (max-width: 1197px) {
+  .label h1 {
+    color: #000;
+    font-size: 56px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 200px;
+  }
+
+  .links ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .links .tryBtn button {
+    padding: 16px 24px;
+    border-radius: 70px;
+    border: none;
+    background: #3461ff;
+
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  .rightText p {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+  }
+
+  .meet .rightText .title h1 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .meet .rightText .title p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px; /* 125% */
+    text-transform: capitalize;
+  }
+
+  .circle {
+    border-radius: 352px;
+    background: #e0ff22;
+    padding: 85px 0;
+    width: calc(100% / 3);
+    text-align: center;
+
+    font-size: 50px;
+  }
+
+  .companies .title h3 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    width: 23%;
+  }
+
+  .companies .title p {
+    color: #252525;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    width: 32%;
+  }
+
+  .rightHelp h1 {
+    font-size: 17px;
+  }
+
+  .howHelp .title h1 {
+    font-size: 30px;
+  }
+
+  .howHelp .title p {
+    font-size: 17px;
+  }
+
+  .talk input {
+    padding: 12px 15px;
+    width: 50%;
+    border: none;
+  }
+}
+
+@media (max-width: 1151px) {
+  header {
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftBox {
+    width: 100%;
+    text-align: center;
+  }
+
+  .paragraph {
+    display: flex;
+    justify-content: center;
+  }
+
+  .talk {
+    display: flex;
+    justify-content: center;
+  }
+
+  .companies .title {
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .comCards {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .topCards,
+  .bottomCards {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .commit {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+  }
+
+  .commit .leftBox {
+    width: 50%;
+  }
+
+  .howWorks {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .leftSide h2 {
+    font-size: 40px;
+  }
+
+  .meet {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .journey .box {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .journey .box .title {
+    display: flex;
+    flex-direction: column;
+  }
+  .circle {
+    padding: 95px 0;
+    width: 40%;
+    text-align: center;
+    font-size: 50px;
+    background: none;
+  }
+
+  .leftSide figure img {
+    width: 60%;
+  }
+
+  .help {
+    flex-direction: column;
+  }
+
+  .rightHelp {
+    width: 100%;
+  }
+
+  .rightHelp h1 {
+    font-size: 30px;
+  }
+
+  .helpP {
+    font-size: 20px;
+  }
+
+  .topFooter {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .leftFooter {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+  }
+
+  .net_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rightFooter ul {
+    align-items: start;
+  }
+}
+
+@media (max-width: 1011px) {
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav .links {
+    background-color: rgba(104, 104, 104, 0.776);
+    height: 100vh;
+    width: 50%;
+    left: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border: 1px solid;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: 0.3s;
+  }
+
+  nav .links.active {
+    left: calc(100% - 50%);
+  }
+
+  nav .links ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav .links li a {
+    font-size: 25px;
+    color: #252525;
+  }
+
+  nav .links .tryBtn button {
+    padding: 20px 60px;
+  }
+
+  .hamburgerMenu {
+    display: block;
+    z-index: 99999;
+  }
+
+  .hamburgerMenu i {
+    transition: 0.4s;
+    color: #3461ff;
+    font-size: 30px;
+    position: fixed;
+    right: 40px;
+  }
+
+  nav .links.active ~ .hamburgerMenu i {
+    right: 20px;
+    color: white;
+  }
+}

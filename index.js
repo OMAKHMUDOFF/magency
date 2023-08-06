@@ -71,3 +71,16 @@ btnPlus.forEach((btn, index) => {
     btnPlus[index].innerHTML = "-";
   });
 });
+
+let menu = document.querySelector(".hamburgerMenu i");
+let hamMenu = document.querySelector("nav .links");
+let menuham = document.querySelector(".hamburgerMenu")
+
+menu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  if (hamMenu.classList === "active") {
+    menuham.style.cssText = `
+      position: absolute;
+    `;
+  }
+});
