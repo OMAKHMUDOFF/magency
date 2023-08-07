@@ -322,7 +322,7 @@
     z-index: 1000;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    transition: 0.3s;
+    transition: 0.5s;
   }
 
   nav .links.active {
@@ -336,7 +336,7 @@
 
   nav .links li a {
     font-size: 25px;
-    color: #252525;
+    color: #e0ff22;
   }
 
   nav .links .tryBtn button {
@@ -420,6 +420,9 @@
 }
 
 @media (max-width: 761px) {
+  .helpP {
+    font-size: 15px;
+  }
   .circle {
     display: none;
   }
@@ -529,11 +532,16 @@
     flex-direction: column;
     gap: 40px;
   }
+
+  .helpP{
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 510px) {
   nav .links li a {
     font-size: 14px;
+    color: #e0ff22;
   }
 
   nav .links {
@@ -550,6 +558,10 @@
 }
 
 @media (max-width: 461px) {
+  .logo_name{
+    justify-content: center;
+  }
+
   .comCards {
     flex-direction: column;
     align-items: center;
@@ -622,6 +634,7 @@
   .talk input {
     width: 100%;
     padding: 20px;
+    font-size: 20px;
   }
   .talk {
     display: flex;
@@ -638,6 +651,8 @@
   }
 
   .helpP {
-    font-size: 13px;
+    font-size: 12px;
   }
+
+
 }
