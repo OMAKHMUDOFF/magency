@@ -199,6 +199,10 @@
     justify-content: center;
   }
 
+  .commit .rightBox {
+    width: 100%;
+  }
+
   .companies .title {
     justify-content: space-around;
     text-align: center;
@@ -237,7 +241,7 @@
   }
 
   .meet {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 
@@ -256,10 +260,6 @@
     text-align: center;
     font-size: 50px;
     background: none;
-  }
-
-  .leftSide figure img {
-    width: 60%;
   }
 
   .help {
@@ -359,5 +359,285 @@
   nav .links.active ~ .hamburgerMenu i {
     right: 20px;
     color: white;
+  }
+
+  .about .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about .cards .card {
+    width: 70%;
+  }
+
+  .gray {
+    width: 70%;
+  }
+
+  .cardgray {
+    position: static;
+    width: 70%;
+  }
+
+  .title_btn .btns {
+    display: none;
+  }
+
+  .title_btn {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .leftPhotos .top,
+  .leftPhotos .bottom {
+    flex-direction: column;
+  }
+
+  .leftPhotos {
+    flex-direction: row;
+    gap: 150px;
+  }
+
+  .commit .leftBox .cards {
+    grid-template-columns: repeat(2, calc(100% / 2));
+    transform: translate(-50px);
+    gap: 42px 100px;
+  }
+}
+
+@media (max-width: 989px) {
+  .leftText h1 {
+    font-size: 20px;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .rightText p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 761px) {
+  .circle {
+    display: none;
+  }
+  .rightHelp h1 {
+    font-size: 20px;
+  }
+  .leftPhotos {
+    gap: 100px;
+  }
+
+  .contactus button {
+    font-size: 15px;
+  }
+
+  .workCards {
+    flex-direction: column;
+  }
+
+  .otherLink {
+    gap: 0;
+  }
+
+  .about .cards .card {
+    width: 100%;
+  }
+
+  .gray {
+    width: 100%;
+  }
+
+  .cardgray {
+    width: 100%;
+  }
+  .help {
+    padding: 90px 50px;
+  }
+
+  .leftFooter {
+    gap: 50px;
+  }
+
+  footer {
+    padding: 62px 50px;
+  }
+
+  .commit .leftBox .cards .card h2 {
+    font-size: 50px;
+  }
+
+  .commit {
+    padding: 103px 60px;
+  }
+  .ourWork p {
+    width: 100%;
+  }
+
+  .companies .title {
+    flex-direction: column;
+  }
+
+  .companies .title p,
+  .companies .title h3 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .leftPhotos {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .box .title h1 {
+    font-size: 25px;
+  }
+
+  .journey .box {
+    padding: 65px 30px;
+  }
+
+  .about {
+    padding: 68px 60px;
+  }
+
+  .ourWork {
+    padding: 79px 60px;
+  }
+
+  .howWorks {
+    padding: 86px 60px;
+  }
+
+  .companies {
+    padding: 46px 60px;
+  }
+  .journey {
+    padding: 87px 60px;
+  }
+
+  .meet {
+    padding: 119px 60px;
+  }
+
+  .startJourney {
+    padding: 66px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 510px) {
+  nav .links li a {
+    font-size: 14px;
+  }
+
+  nav .links {
+    padding: 50px 20px;
+  }
+
+  nav .links .tryBtn button {
+    padding: 20px;
+  }
+
+  .more button {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 461px) {
+  .comCards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .topCards,
+  .bottomCards {
+    align-items: center;
+  }
+
+  .bottomCards {
+    margin-top: 40px;
+  }
+
+  .rightHelp h1 {
+    font-size: 14px;
+  }
+
+  .textBtn button {
+    width: 25px;
+    height: 25px;
+  }
+
+  .commit .leftBox .cards {
+    grid-template-columns: repeat(1, 100%);
+    transform: translate(0);
+    gap: 42px 50px;
+  }
+
+  .otherLink {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bottomFooter {
+    padding: 50px 60px;
+  }
+
+  .topFooter {
+    margin-bottom: 50px;
+  }
+
+  .photoName .name h3,
+  .photoName .name p,
+  .rating p {
+    font-size: 15px;
+  }
+
+  .cardgray,
+  .gray,
+  .about .cards .card {
+    padding: 32px;
+  }
+
+  .leftFooter,
+  .rightFooter {
+    flex-direction: column;
+  }
+
+  .label h1,
+  .commit .rightBox h2,
+  .leftSide h2 {
+    font-size: 30px;
+  }
+  .paragraph p,
+  .commit .rightBox p,
+  .leftSide p {
+    font-size: 14px;
+  }
+
+  .talk input {
+    width: 100%;
+    padding: 20px;
+  }
+  .talk {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rightSide .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    padding: 20px;
+  }
+
+  .helpP {
+    font-size: 13px;
   }
 }
